@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Vespera Notes</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: rgba(22, 27, 34, 0.8);
+      --border: #30363d;
+      --text: #c9d1d9;
+      --heading: #f0f6fc;
+      --accent: #58a6ff;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      backdrop-filter: blur(8px);
+    }
+    h1, h2, h3 { color: var(--heading); }
+    h1 { margin-top: 0; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+    h2 { margin-top: 28px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: #161b22; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; border: 1px solid var(--border); }
+    ul { padding-left: 20px; }
+    .updated { color: #8b949e; font-size: 0.9em; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last Updated: September 2026</div>
+
+    <p>This Privacy Policy explains how <strong>Vespera Notes</strong> ("we", "our", or "the application"), developed by <strong>Vespera Labs</strong>, handles your data.</p>
+
+    <h2>1. Offline-First Architecture</h2>
+    <p>Vespera Notes is built with an offline-first architecture. All your notes, categories, tags, and settings are stored locally on your device storage by default. We do not operate proprietary servers to read, process, or sell your personal notes.</p>
+
+    <h2>2. Google Drive Synchronization</h2>
+    <p>If you choose to enable cloud synchronization, Vespera Notes connects directly with Google Drive using the official Google Identity and Google Drive APIs.</p>
+    <ul>
+      <li><strong>Requested Scope:</strong> <code>https://www.googleapis.com/auth/drive.appdata</code></li>
+      <li><strong>Dedicated App Data:</strong> The application requests access solely to its own hidden Application Data Folder (<code>appDataFolder</code>).</li>
+      <li><strong>No Access to Personal Drive Files:</strong> The application cannot see, read, modify, or delete any of your documents, photos, or existing files stored in your personal Google Drive.</li>
+      <li><strong>Sync Payload:</strong> The application only writes and reads its own encrypted or formatted sync payload file (<code>vespera_notes_sync.json</code>) inside the dedicated app folder.</li>
+    </ul>
+
+    <h2>3. Data Collection and Telemetry</h2>
+    <p>We do not collect personal analytics, location data, biometric data, or telemetry. Authentication tokens obtained via Google Identity are held strictly on your device to execute sync requests directly between your device and Google's servers.</p>
+
+    <h2>4. Third-Party Disclosures</h2>
+    <p>We do not sell, rent, or trade your personal data or note content to any third parties. When using Google Drive synchronization, data transmission occurs directly between your client and Google in accordance with Google's Privacy Policy.</p>
+
+    <h2>5. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please reach out via our GitHub repository or contact us via email at: <code>your-contact-email@example.com</code>.</p>
+  </div>
+</body>
+</html>
